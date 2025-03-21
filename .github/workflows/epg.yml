@@ -1,9 +1,10 @@
 name: EPG
-
+# 每天00:40 10:15 15:00更新
 on:
   schedule:
-    - cron: 0 4,10,22 * * *
-    - cron: 39 15,16 * * *
+    - cron: 40 16 * * *
+    - cron: 15 02 * * *
+    - cron: 00 07 * * *
   workflow_dispatch:
 
 jobs:
